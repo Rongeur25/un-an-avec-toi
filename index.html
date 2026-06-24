@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Un an avec toi ❤️</title>
+
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== EN-TÊTE ===== -->
+    <header>
+        <div class="compteur">
+            <span id="jours">365</span> jours
+        </div>
+        <h1>Un an avec toi</h1>
+        <p class="sous-titre">365 jours, une histoire, mille souvenirs</p>
+    </header>
+
+    <!-- ===== PRÉAMBULE ===== -->
+    <section class="preambule" id="preambule">
+        <div class="preambule-contenu">
+            <i class="fa-solid fa-quote-left"></i>
+            <p id="texte-preambule">
+                <!-- À MODIFIER : mets ici ta phrase d'ouverture -->
+                Il y a un an, je ne savais pas que tu existais. Aujourd'hui, je ne sais plus imaginer ma vie sans toi.
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+        </div>
+    </section>
+
+    <!-- ===== GRILLE DES CARTES ===== -->
+    <main class="grille" id="grille">
+
+        <!-- CARTE 1 : Le commencement (spéciale, avec sous-parties) -->
+        <div class="carte carte-special" data-id="commencement">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-seedling"></i></div>
+                <h2>Le commencement</h2>
+                <p class="carte-synopsis">Avant toi, je ne cherchais pas. Et puis...</p>
+                <span class="carte-indice">◈ 3 chapitres</span>
+            </div>
+        </div>
+
+        <!-- CARTE 2 : Le zoo -->
+        <div class="carte" data-id="zoo" data-couleur="#2d7d46">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-paw"></i></div>
+                <h2>Le zoo</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 3 : Le RER (1) -->
+        <div class="carte" data-id="rer1" data-couleur="#b8860b">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-train-subway"></i></div>
+                <h2>Le RER</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 4 : Ton anniversaire -->
+        <div class="carte" data-id="anniversaire" data-couleur="#c0392b">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-cake-candles"></i></div>
+                <h2>Ton anniversaire</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 5 : Le RER (2) -->
+        <div class="carte" data-id="rer2" data-couleur="#b8860b">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-train-subway"></i></div>
+                <h2>Le RER</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+                <span class="carte-indice">◈ bis</span>
+            </div>
+        </div>
+
+        <!-- CARTE 6 : Chez toi -->
+        <div class="carte" data-id="chez-toi" data-couleur="#8e44ad">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-house-chimney"></i></div>
+                <h2>Chez toi</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 7 : Le jardin des plantes -->
+        <div class="carte" data-id="jardin" data-couleur="#27ae60">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-leaf"></i></div>
+                <h2>Le jardin des plantes</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 8 : Autour du lac -->
+        <div class="carte" data-id="lac" data-couleur="#2980b9">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-water"></i></div>
+                <h2>Autour du lac</h2>
+                <p class="carte-synopsis">— À MODIFIER —</p>
+            </div>
+        </div>
+
+        <!-- CARTE 9 : La suite -->
+        <div class="carte carte-future" data-id="suite" data-couleur="#f39c12">
+            <div class="carte-interieur">
+                <div class="carte-icone"><i class="fa-solid fa-star"></i></div>
+                <h2>La suite</h2>
+                <p class="carte-synopsis">L'avenir nous le dira...</p>
+                <span class="carte-indice">✧ À écrire ensemble</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== MODALE (contenu au clic) ===== -->
+    <div class="modale" id="modale">
+        <div class="modale-contenu">
+            <button class="modale-fermer" id="fermerModale">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modale-texte" id="modaleTexte">
+                <!-- Rempli par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer>
+        <p>Fait avec <i class="fa-solid fa-heart" style="color:#e74c3c;"></i> pour toi — le <span id="dateJour"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
