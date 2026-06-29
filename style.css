@@ -1,0 +1,337 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d1a;
+    color: #f0ece3;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-image: radial-gradient(ellipse at 20% 50%, #1a1a3e 0%, #0d0d1a 70%);
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1a1a2e; }
+::-webkit-scrollbar-thumb { background: #d4a574; border-radius: 10px; }
+
+/* ===== EN-TÊTE ===== */
+header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    position: relative;
+}
+
+.compteur {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #d4a574;
+    margin-bottom: 0.5rem;
+}
+.compteur span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #f0ece3 0%, #d4a574 60%, #b8860b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.sous-titre {
+    font-weight: 300;
+    color: rgba(240, 236, 227, 0.6);
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    letter-spacing: 4px;
+}
+
+/* ===== PRÉAMBULE ===== */
+.preambule {
+    max-width: 750px;
+    margin: 2.5rem auto 3rem;
+    padding: 2rem 2.5rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    backdrop-filter: blur(6px);
+    text-align: center;
+}
+
+.preambule-contenu {
+    position: relative;
+}
+.preambule-contenu .fa-quote-left,
+.preambule-contenu .fa-quote-right {
+    color: #d4a574;
+    opacity: 0.4;
+    font-size: 1.5rem;
+}
+.preambule-contenu .fa-quote-left {
+    display: block;
+    text-align: left;
+}
+.preambule-contenu .fa-quote-right {
+    display: block;
+    text-align: right;
+}
+
+#texte-preambule {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 0.5rem 0;
+    color: #f0ece3;
+}
+
+/* ===== GRILLE ===== */
+.grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== CARTES ===== */
+.carte {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 1.8rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, transparent 60%, rgba(212, 165, 116, 0.05));
+    pointer-events: none;
+}
+
+.carte:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 165, 116, 0.4);
+    box-shadow: 0 12px 40px rgba(212, 165, 116, 0.08);
+}
+
+.carte-interieur {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.carte-icone {
+    font-size: 2rem;
+    color: #d4a574;
+    margin-bottom: 0.8rem;
+}
+
+.carte h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: #f0ece3;
+}
+
+.carte-synopsis {
+    font-size: 0.9rem;
+    color: rgba(240, 236, 227, 0.6);
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.carte-indice {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #d4a574;
+    opacity: 0.6;
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* Carte spéciale "commencement" */
+.carte-special {
+    border-color: rgba(212, 165, 116, 0.3);
+    background: rgba(212, 165, 116, 0.05);
+}
+.carte-special .carte-icone {
+    color: #f0ece3;
+}
+
+/* Carte "La suite" */
+.carte-future {
+    border-style: dashed;
+    border-color: rgba(212, 165, 116, 0.2);
+    opacity: 0.8;
+}
+
+/* ===== MODALE ===== */
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 26, 0.92);
+    backdrop-filter: blur(12px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1.5rem;
+}
+
+.modale.ouverte {
+    display: flex;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modale-contenu {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 28px;
+    padding: 2.5rem;
+    max-width: 580px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    position: relative;
+}
+
+.modale-fermer {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    color: rgba(240, 236, 227, 0.5);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.modale-fermer:hover {
+    color: #f0ece3;
+}
+
+.modale-texte {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f0ece3;
+}
+.modale-texte h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #d4a574;
+}
+.modale-texte p {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.modale-texte .detail-sensoriel {
+    font-style: italic;
+    color: rgba(212, 165, 116, 0.6);
+    font-size: 0.9rem;
+    border-left: 2px solid #d4a574;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* ===== SOUS-PARTIES (pour "Le commencement") ===== */
+.sous-partie {
+    margin: 1.2rem 0;
+    padding: 1rem 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    border-left: 2px solid #d4a574;
+}
+.sous-partie h3 {
+    font-size: 1rem;
+    color: #d4a574;
+    margin-bottom: 0.3rem;
+}
+.sous-partie p {
+    font-size: 0.92rem;
+    color: rgba(240, 236, 227, 0.7);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    color: rgba(240, 236, 227, 0.25);
+    letter-spacing: 1px;
+}
+footer i {
+    margin: 0 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .grille {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .carte {
+        min-height: 150px;
+        padding: 1.2rem 0.8rem;
+    }
+    .carte h2 {
+        font-size: 1rem;
+    }
+    .carte-synopsis {
+        font-size: 0.75rem;
+    }
+    .modale-contenu {
+        padding: 1.8rem;
+    }
+    .preambule {
+        padding: 1.2rem 1.5rem;
+        margin: 1.5rem 0;
+    }
+    #texte-preambule {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .grille {
+        grid-template-columns: 1fr;
+    }
+}
