@@ -27,7 +27,7 @@ const contenu = {
 
     zoo: {
         titre: "Le zoo",
-        texte: "— À MODIFIER —",
+        texte: "Notre première sortie en couple. J'ai passé la journée collé à toi, les mains sur ta taille quand on était statique, main dans la main en marchant, tout en te faisant des petits bisous dès que j'en avais l'occasion. Pour ma défense, on ne s'était pas vu depuis un moment avec nos vacances respectives... À midi, pendant le repas, je t'ai raconté tout ce qu'il s'était passé avec Audrey. J'avais tellement peur que tu ne veuilles plus de moi à cause de ça. Dieu merci, ce n'est pas arrivé ! À la fin du repas, tu m'as offert un bouquet de fleurs en crochet (que j'ai toujours sur mon bureau d'ailleurs), et après on s'est pris dans les bras (supplément bisous bien sûr). On a ensuite continué la visite, jusqu'à atteindre l'enclos des girafes. Ce moment, c'était vraiment LE moment calme, il n'y avait personne autour. On s'est mesuré avec les machins pour enfant, puis on s'est embrassé. Pour la première fois. Bon, avec du recul, c'était plus un bisous sur les lèvres qu'un gros bon roulage de pelle...mais ça a l'honneur d'être notifié quand même.",
         detail: "— À MODIFIER (ex: il faisait beau, tu souriais...)"
     },
 
