@@ -45,8 +45,8 @@ const contenu = {
 
     rer2: {
         titre: "Le RER — bis",
-        texte: "— À MODIFIER —",
-        detail: "— À MODIFIER —"
+        texte: "Cette partie là ne sera pas la plus drôle, mais elle est importante pour moi. <br>Commençons par le commencement, les gens. La plupart du temps, il y avait beaucoup de monde dans les transports. Et dans ces cas-là, j'ai bien souvent du mal à me contenir. Je râle, je parle mal aux gens qui me bousculent, je critique ceux qui prennent de la place ou qui font du bruit. Et toi, tu n'aimes pas ça. J'en suis conscient, et j'essaye de changer ça...mais ce n'est pas toujours une réussite. Néanmoins, je pense que c'est une bonne chose que je me détende vis-à-vis des gens, ne serait-ce que pour ma tension (<i>comme si j'avais des soucis de tension mdr</i>). <br>Bref, tout ça pour dire que je suis désolé de t'embêter avec ça. Aussi, c'est en bonne voie, des fois je pense fort à toi et ça me détend quand c'est compliqué. <br>",
+        detail: "Je t'aime"
     },
 
     "chez-toi": {
