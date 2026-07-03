@@ -63,7 +63,7 @@ const contenu = {
 
     lac: {
         titre: "Autour du lac",
-        texte: "— À MODIFIER —",
+        texte: "",
         detail: "— À MODIFIER —"
     },
 
