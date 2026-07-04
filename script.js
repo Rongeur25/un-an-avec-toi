@@ -79,20 +79,22 @@ document.querySelectorAll('.carte').forEach(carte => {
         let html = `<h2>${data.titre}</h2>`;
 
         if (data.sousParties) {
-            data.sousParties.forEach(sp => {
-                html += `
-                    <div class="sous-partie">
-                        <h3>${sp.titre}</h3>
-                        <p>${sp.texte}</p>
-                    </div>
-                `;
-            });
-        } else {
-            html += `<p>${data.texte}</p>`;
-            if (data.detail) {
-                html += `<p class="detail-sensoriel">◈ ${data.detail}</p>`;
-            }
-        }
+    html += `<div class="sous-parties-scroll">`;
+    data.sousParties.forEach(sp => {
+        html += `
+            <div class="sous-partie">
+                <h3>${sp.titre}</h3>
+                <p>${sp.texte}</p>
+            </div>
+        `;
+    });
+    html += `</div>`;
+} else {
+    html += `<p>${data.texte}</p>`;
+    if (data.detail) {
+        html += `<p class="detail-sensoriel">◈ ${data.detail}</p>`;
+    }
+}
 
         modaleTexte.innerHTML = html;
         modale.classList.add('ouverte');
