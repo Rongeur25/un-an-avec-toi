@@ -394,3 +394,12 @@ footer i {
     background: #d4a574;
     border-radius: 10px;
 }
+/* ===== BONUS : SCROLL SNAP AU CENTRE ===== */
+.sous-parties-scroll .sous-partie {
+    scroll-snap-align: center; /* ← au lieu de "start" */
+}
+
+/* ===== BONUS : CARTES PLUS LARGES ===== */
+.sous-parties-scroll .sous-partie {
+    flex: 0 0 280px; /* ← au lieu de 220px */
+}
