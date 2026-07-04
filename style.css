@@ -403,3 +403,70 @@ footer i {
 .sous-parties-scroll .sous-partie {
     flex: 0 0 280px; /* ← au lieu de 220px */
 }
+/* ===== SOUS-CARTES (dans la modale) ===== */
+.sous-parties-grille {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.sous-carte {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    padding: 1.2rem 1.2rem;
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.sous-carte:hover {
+    background: rgba(212, 165, 116, 0.08);
+    border-color: rgba(212, 165, 116, 0.4);
+    transform: translateX(6px);
+}
+
+.sous-carte h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #f0ece3;
+}
+
+.sous-carte-indice {
+    font-size: 0.7rem;
+    color: rgba(212, 165, 116, 0.4);
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+}
+
+/* ===== TEXTE AFFICHÉ APRÈS CLIC SUR SOUS-CARTE ===== */
+#sous-contenu {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.sous-texte-affiche {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    padding: 1.2rem 1.2rem;
+    border-left: 2px solid #d4a574;
+}
+
+.sous-retour {
+    background: none;
+    border: none;
+    color: rgba(212, 165, 116, 0.6);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+    padding: 0;
+}
+
+.sous-retour:hover {
+    color: #d4a574;
+}
+
+.sous-retour i {
+    margin-right: 6px;
+}
