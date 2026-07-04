@@ -5,11 +5,11 @@ const contenu = {
     commencement: {
         titre: "Le commencement",
         sousParties: [
-            { titre: "Groupe de kholle", texte: "Plus j'y repense, plus je me dis que c'est fou que tout démarre par ça. Parce que mine de rien, sans ce fameux groupe de kholle, on aurait passé bien moins de temps ensemble...et on n'en serait peut-être pas là. Pour être honnête, il est arrivé un moment dans l'année où je m'inquiétais plus de ta prestation en kholle que de la mienne. Sans même m'en rendre compte, j'étais tombé amoureux de toi ? Évidemment, les kholles ne font pas tout. Ce que je trouve marrant, c'est qu'au fond, la seule chose qu'on ne faisait pas ensemble, c'était manger. Les matins, on se retrouvait, et après les cours on rentrait ensemble. Enfin, ensemble non...mais j'ai vite eu d'yeux que pour toi <3. Mêmes les soirs, on parlait beaucoup. Surtout des cours, certes, mais quand même ! T'étais la seule à qui je parlais autant." },
+            { id: "groupe-kholle", titre: "Groupe de kholle", texte: "Plus j'y repense, plus je me dis que c'est fou que tout démarre par ça. Parce que mine de rien, sans ce fameux groupe de kholle, on aurait passé bien moins de temps ensemble...et on n'en serait peut-être pas là. Pour être honnête, il est arrivé un moment dans l'année où je m'inquiétais plus de ta prestation en kholle que de la mienne. Sans même m'en rendre compte, j'étais tombé amoureux de toi ? Évidemment, les kholles ne font pas tout. Ce que je trouve marrant, c'est qu'au fond, la seule chose qu'on ne faisait pas ensemble, c'était manger. Les matins, on se retrouvait, et après les cours on rentrait ensemble. Enfin, ensemble non...mais j'ai vite eu d'yeux que pour toi <3. Mêmes les soirs, on parlait beaucoup. Surtout des cours, certes, mais quand même ! T'étais la seule à qui je parlais autant." },
             
-            { titre: "Les détails", texte: "Tu l'auras remarqué, j'accorde une certaine importance aux détails. Au point où je note qu'au bout d'une semaine, alors qu'il faisait chaud (début Septembre tu connais), il y a une petite brune toujours en t-shirt noir au milieu des autres filles en crop-top. Elle m'avait l'air sympathique, je la voyais discuter avec ses amies, toujours avec un grand sourire. Et puis il a fallu rejoindre un groupe de kholle, et on a commencé à rentrer ensemble...et son sourire était génial. Un joli sourire, et un style vestimentaire qui change, qui lui va bien. Puis au fil du temps, j'ai découvert à quel point elle était gentille. Elle a cette façon de parler, de faire les choses, que je trouve mignonne. L'hiver vient, ça nous arrive de rentrer ensemble après une kholle tardive. Ils me font du bien ces moments, on a beau être au milieu du RER, l'écouter parler, ça me détend. Et puis son sourire, ses yeux, ses fossettes...elle est belle. Quand elle est stressée, elle se frotte les mains ou se gratte les bras, parfois jusqu'à se faire mal. J'aime pas ça, alors je la regarde encore plus, je veux veiller sur elle." },
+            { id: "details" ,titre: "Les détails", texte: "Tu l'auras remarqué, j'accorde une certaine importance aux détails. Au point où je note qu'au bout d'une semaine, alors qu'il faisait chaud (début Septembre tu connais), il y a une petite brune toujours en t-shirt noir au milieu des autres filles en crop-top. Elle m'avait l'air sympathique, je la voyais discuter avec ses amies, toujours avec un grand sourire. Et puis il a fallu rejoindre un groupe de kholle, et on a commencé à rentrer ensemble...et son sourire était génial. Un joli sourire, et un style vestimentaire qui change, qui lui va bien. Puis au fil du temps, j'ai découvert à quel point elle était gentille. Elle a cette façon de parler, de faire les choses, que je trouve mignonne. L'hiver vient, ça nous arrive de rentrer ensemble après une kholle tardive. Ils me font du bien ces moments, on a beau être au milieu du RER, l'écouter parler, ça me détend. Et puis son sourire, ses yeux, ses fossettes...elle est belle. Quand elle est stressée, elle se frotte les mains ou se gratte les bras, parfois jusqu'à se faire mal. J'aime pas ça, alors je la regarde encore plus, je veux veiller sur elle." },
             
-            { titre: "Des prises de tête qui valent le coup", texte: "Mars, je me creuse la tête pour mes études. Je me suis attaché à toi, tu me fais du bien. Mai, je sais où faire mes études. J'ai tout le temps pour penser à toi ; je pense à toi, tout le temps. Je me demande comment faire pour continuer à te voir sans éveiller les soupçons. On passe une après-midi au parc de Nogent. Assis, j'ai les bras autour de toi ; debouts, on se tient la main. Plus tard, tu me demandes ce que ça veut dire, s'il y a quelque chose entre nous. J'ai peur de te faire du mal, je veux pas me lancer. Malgré tout, on se rapproche. On se tient la main, même devant les autres. On se cherche du regard, on passe plus de temps ensemble entre les cours. Un jour, alors qu'on rentre en début d'après-midi, je te fais une blague pas très drôle...la blague du panneau. Tu le prends pas très bien, je m'en veux, j'ai envie de te prendre dans mes bras, mais je ne peux pas. Alors je rigole, bêtement, et m'excuse, tout aussi bête. L'année est finie, tu me manques. Je tombe sur l'affiche d'un film, une adaptation de Stephen King. Je sais que tu aimes cet auteur, alors je t'invite à aller le voir. On se tient la main tout le long du trajet, tu passes la séance collée à moi, quitte à te faire mal au dos. Sur le chemin du retour, tu m'offres un petit calepin, 'un an en prépa'. Je le range avec un joli dessin requin marteau, fais par tes soins, dans la coque de mon téléphone. Tu pleures, trouvant ça adorable. Et moi, je réalise que je te veux, pour la vie. Quelques heures plus tard, on sortait officiellement en semble." }
+            { id: "prises-tete", titre: "Des prises de tête qui valent le coup", texte: "Mars, je me creuse la tête pour mes études. Je me suis attaché à toi, tu me fais du bien. Mai, je sais où faire mes études. J'ai tout le temps pour penser à toi ; je pense à toi, tout le temps. Je me demande comment faire pour continuer à te voir sans éveiller les soupçons. On passe une après-midi au parc de Nogent. Assis, j'ai les bras autour de toi ; debouts, on se tient la main. Plus tard, tu me demandes ce que ça veut dire, s'il y a quelque chose entre nous. J'ai peur de te faire du mal, je veux pas me lancer. Malgré tout, on se rapproche. On se tient la main, même devant les autres. On se cherche du regard, on passe plus de temps ensemble entre les cours. Un jour, alors qu'on rentre en début d'après-midi, je te fais une blague pas très drôle...la blague du panneau. Tu le prends pas très bien, je m'en veux, j'ai envie de te prendre dans mes bras, mais je ne peux pas. Alors je rigole, bêtement, et m'excuse, tout aussi bête. L'année est finie, tu me manques. Je tombe sur l'affiche d'un film, une adaptation de Stephen King. Je sais que tu aimes cet auteur, alors je t'invite à aller le voir. On se tient la main tout le long du trajet, tu passes la séance collée à moi, quitte à te faire mal au dos. Sur le chemin du retour, tu m'offres un petit calepin, 'un an en prépa'. Je le range avec un joli dessin requin marteau, fais par tes soins, dans la coque de mon téléphone. Tu pleures, trouvant ça adorable. Et moi, je réalise que je te veux, pour la vie. Quelques heures plus tard, on sortait officiellement en semble." }
             
         ]
         
@@ -79,16 +79,19 @@ document.querySelectorAll('.carte').forEach(carte => {
         let html = `<h2>${data.titre}</h2>`;
 
         if (data.sousParties) {
-            html += `<div class="sous-parties-scroll">`;
+            html += `<div class="sous-parties-grille">`;
             data.sousParties.forEach(sp => {
                 html += `
-                    <div class="sous-partie">
-                        <h3>${sp.titre}</h3>
-                        <p>${sp.texte}</p>
+                    <div class="sous-carte" data-sous-id="${sp.id}">
+                        <div class="sous-carte-interieur">
+                            <h3>${sp.titre}</h3>
+                            <p class="sous-carte-indice">◈ cliquer pour lire</p>
+                        </div>
                     </div>
                 `;
             });
             html += `</div>`;
+            html += `<div id="sous-contenu"></div>`;
         } else {
             html += `<p>${data.texte}</p>`;
             if (data.detail) {
@@ -96,6 +99,33 @@ document.querySelectorAll('.carte').forEach(carte => {
             }
         }
         modaleTexte.innerHTML = html;
+        
+        const sousDonnees = contenu.commencement.sousParties;
+        document.querySelectorAll('.sous-carte').forEach(sousCarte => {
+            sousCarte.addEventListener('click', function() {
+                const id = this.dataset.sousId;
+                const data = sousDonnees.find(item => item.id === id);
+                if (!data) return;
+                
+                const contenuDiv = document.getElementById('sous-contenu');
+                contenuDiv.innerHTML = `
+                    <div class="sous-texte-affiche">
+                        <button class="sous-retour" id="retourSousParties">
+                            <i class="fa-solid fa-arrow-left"></i> Retour
+                        </button>
+                        <h3 style="color: #d4a574; margin-top: 0.5rem;">${data.titre}</h3>
+                        <p style="margin-top: 0.8rem; line-height: 1.8;">${data.texte}</p>
+                    </div>
+                `;
+                document.querySelector('.sous-parties-grille').style.display = 'none';
+                document.getElementById('sous-contenu').style.display = 'block';
+                document.getElementById('retourSousParties').addEventListener('click', function() {
+                    document.querySelector('.sous-parties-grille').style.display = 'flex';
+                    document.getElementById('sous-contenu').style.display = 'none';
+                });
+            });
+        });
+                
         modale.classList.add('ouverte');
         document.body.style.overflow = 'hidden';
     });
