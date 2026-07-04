@@ -335,3 +335,62 @@ footer i {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ===== SOUS-CARTES EN HORIZONTAL (pour "Le commencement") ===== */
+.sous-parties-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.2rem 1rem 0.2rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sous-parties-scroll .sous-partie {
+    flex: 0 0 220px;
+    scroll-snap-align: start;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 1.2rem 1rem;
+    border-left: 2px solid #d4a574;
+    backdrop-filter: blur(4px);
+}
+
+.sous-parties-scroll .sous-partie h3 {
+    font-size: 0.95rem;
+    color: #d4a574;
+    margin-bottom: 0.4rem;
+}
+
+.sous-parties-scroll .sous-partie p {
+    font-size: 0.85rem;
+    color: rgba(240, 236, 227, 0.7);
+    line-height: 1.5;
+}
+
+/* Indicateur de scroll (optionnel mais sympa) */
+.sous-parties-scroll::after {
+    content: '◈ balayer pour voir plus ◈';
+    display: block;
+    flex: 0 0 auto;
+    padding: 0 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: rgba(212, 165, 116, 0.25);
+    align-self: center;
+}
+
+/* Personnalisation de la scrollbar (optionnel) */
+.sous-parties-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+.sous-parties-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+.sous-parties-scroll::-webkit-scrollbar-thumb {
+    background: #d4a574;
+    border-radius: 10px;
+}
