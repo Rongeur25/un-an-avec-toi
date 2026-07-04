@@ -59,8 +59,8 @@ const contenu = {
 
     suite: {
         titre: "La suite",
-        texte: "L'avenir nous le dira. Mais une chose est sûre : je veux que tu sois là, à chaque page.",
-        detail: "✧ Rendez-vous dans un an pour la suite ✧"
+        texte: "Je voudrais qu'on continue pareil, mais en mieux. <br>Je trouve qu'on fonctionne bien tous les deux. <br>Quand on traverse une mauvaise passe, que ce soit moi ou toi, on fait en sorte de se voir. Et ça fait du bien. <br>On s'accorde aussi plutôt bien sur nos envies. Du moins, de mon côté, j'ai jamais été frustré que tu sois fatiguée et qu'on ne roule pas des gros patins. J'espère qu'il en est de même pour toi. <br>En parlant de ça, j'aime notre rythme. Parfois, on se pose juste, petits bisous tranquille. Parfois, on s'embrasse, on se touche. Tu me diras, c'est sûrement normal pour un couple, mais je trouve ça important de notifier que j'aime être avec toi, peu importe ce qu'on fait. <br>J'ai du mal à me rendre compte, mais j'ai peut-être beaucoup parlé de bisous et tout. Je voulais alors préciser que, évidemment, je ne pense pas qu'à ça. Si je t'aime, c'est pas uniquement parce que t'es une jolie femme que je peux embrasser et toucher de temps en temps. C'est avant tout parce que je suis bien avec toi. Parce que tu calmes les tempêtes qui font rage dans ma tête, rien que par ta présence. Que t'écouter parler, ça me détend. Après évidemment, je te trouve magnifique. Ton sourire, tes joues, tes mains, tes courbes, me font chavirer. Mais, c'est avant tout pour qui tu es que je t'aime. <br>J'ai hâte qu'on vive d'autres choses ensemble. Qu'on soit heureux, malgré la distance évidente qu'on devra affronter l'année à venir. J'espère que d'ici là, on aura eu l'occasion de passer du temps en toute intimité...  ",
+        detail: "J'espère que tu ne regrettes pas de m'avoir choisi. <br>Merci Manon. D'être là, d'être toi. <br>Je t'aime princesse, plus que tout"
     }
 
 };
